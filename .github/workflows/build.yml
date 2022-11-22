@@ -35,9 +35,8 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') -exec pylint {} \;
   sendoff:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Finalizing the Workflow
