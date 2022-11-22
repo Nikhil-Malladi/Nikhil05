@@ -36,4 +36,9 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
+  done:
+    runs-on: ubuntu-latest
+    - name: Finalizing the Workflow
+      run: |
+        echo "Done Successfully"
 
