@@ -36,10 +36,4 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py') -exec pylint {} \;
-  sendoff:
-    steps:
-      - uses: actions/checkout@v3
-      - name: Finalizing the Workflow
-      run: |
-        echo "Done Successfully"
 
