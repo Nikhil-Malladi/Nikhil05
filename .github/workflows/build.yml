@@ -38,7 +38,9 @@ jobs:
         pylint $(git ls-files '*.py')
   sendoff:
     runs-on: ubuntu-latest
-    - name: Finalizing the Workflow
+    steps:
+      - uses: actions/checkout@v3
+      - name: Finalizing the Workflow
       run: |
         echo "Done Successfully"
 
