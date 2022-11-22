@@ -36,5 +36,5 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint --fail-under=3 $(git ls-files '*.py') -exec pylint {} \;
+        pylint --fail-under=3 $(git ls-files '*.py')
 
