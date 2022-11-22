@@ -13,6 +13,7 @@ def playground():
 
 @app.route('/theatre')
 def theatre():
+    i=1
     return jsonify({'status_code':1,'message':'successfully enrouted to Movie Theatre'})
 
 if __name__=="__main__":
