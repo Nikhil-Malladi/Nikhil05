@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-d(am@ypk0iy_v%9$t!bs*vcaz@f_1bcy(dguzq!+v8sk0mhqdm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'predict.apps.PredictConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
