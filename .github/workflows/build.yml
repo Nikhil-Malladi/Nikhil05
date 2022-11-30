@@ -36,4 +36,3 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint --fail-under=3 $(git ls-files '*.py') --load-plugins pylint_django
-
