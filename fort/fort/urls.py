@@ -20,4 +20,5 @@ urlpatterns = [
     path("predictor", include("predictor.urls"), name="predictor"),
     path("admin/", admin.site.urls, name="admin"),
     path("todo/", include("todo.urls"), name="todo"),
+    path("",include("myprofile.urls"), name = "home")
 ]
