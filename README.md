@@ -1,2 +1,2 @@
 # Nikhil
-My Personal Website
+Personal Website
